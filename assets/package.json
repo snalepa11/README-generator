@@ -1,0 +1,22 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "readme-generator",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snalepa11/README-generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snalepa11/README-generator/issues"
+  },
+  "homepage": "https://github.com/snalepa11/README-generator#readme",
+  "dependencies": {
+    "inquirer": "^9.2.14"
+  }
+}
