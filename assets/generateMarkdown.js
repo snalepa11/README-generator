@@ -9,22 +9,23 @@
 function generateMarkdown(data){
     console.log(data)
     `#Title 
+    ${data.Title}
     ##Table of Contents
 
     ##Description 
-
+    ${data.Description}
     ##Installation Instructions
-
+    ${data.Installation}
     ##Usage
-
+    ${data.Usage}
     ##Contributions
-
+    ${data.Contributions}
     ##Test Instructions
-
+    ${data.Test}
     ##License 
 
     ##Questions
-    - GitHub Name: 
-    - GitHub Link: 
-    - Email:`
+    - GitHub Name: ${data.Name}
+    - GitHub Link: ${data.Link}
+    - Email:${data.Email}`
 }

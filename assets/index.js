@@ -17,7 +17,7 @@ const questions = [
     },
     {
         type: "input",
-        name: "Installastion Instructions",
+        name: "Installastion",
         message:"Enter installation instructions if applicable."
     },
     {
@@ -32,7 +32,7 @@ const questions = [
     },
     {
         type: "input",
-        name: "Test Instructions",
+        name: "Test",
         message: "Please enter test instructions."
     },
     {
@@ -41,23 +41,23 @@ const questions = [
     },
     {
         type: "input",
-        name: "Questions",
+        name: "Name",
         message: "Please enter your GitHub username, GitHub profile link and email address."
     },
     {
         type: "input",
-        name: "Questions",
+        name: "Link",
         message: "Enter the link to your GitHub."
     },
     {
         type: "input",
-        name: "Questions",
+        name: "Email",
         message: "Enter your email address."
     }
 ]
 
 function wrtieToFile(fileName, data){
-    return fs
+    return fs.writeFileSync(path.join(process.cwd(), fileName), data)
 }
 
 var inquirer = require('inquirer');
