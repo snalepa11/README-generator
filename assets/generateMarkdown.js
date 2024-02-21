@@ -29,9 +29,10 @@ function generateMarkdown(data){
     ##Test Instructions
     ${data.Test}
     ##License 
-
+    ${data.License}
     ##Questions
     - GitHub Name: ${data.Name}
     - GitHub Link: ${data.Link}
+    - Desployed Link: ${data.Deployed}
     - Email:${data.Email}`
 }

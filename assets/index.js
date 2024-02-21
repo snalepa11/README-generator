@@ -36,8 +36,11 @@ const questions = [
         message: "Please enter test instructions."
     },
     {
-        type: "choice",
+        type: "checkbox",
         name: "License",
+        message: "What license do you use?",
+        choices: ['Apache', 'Boost', 'BSD3', 'BSD2','CCO','Attribution 4.0 International', 'Attribution-ShareAlike 4.0 International', 'Attribution-NonCommercial 4.0 International', 'Attribution-NoDerivates 4.0 International',  ]
+
     },
     {
         type: "input",
@@ -49,6 +52,11 @@ const questions = [
         name: "Link",
         message: "Enter the link to your GitHub."
     },
+    {
+        type: "input",
+        name: "Deployed",
+        message: "Enter the link to your deployed project."
+    }
     {
         type: "input",
         name: "Email",
