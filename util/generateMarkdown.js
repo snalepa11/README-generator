@@ -8,8 +8,7 @@
 
 function generateMarkdown(data){
     console.log(data)
-    `#Title 
-    ${data.Title}
+    return `#${data.Title}
     ##Table of Contents
     - [Description](#Description)
     - [Installation Instructions](#Installation)
@@ -35,4 +34,6 @@ function generateMarkdown(data){
     - GitHub Link: ${data.Link}
     - Desployed Link: ${data.Deployed}
     - Email:${data.Email}`
-}
+};
+
+module.exports = generateMarkdown;
