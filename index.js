@@ -1,9 +1,9 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 const path = require('path');
-let generateMarkdown = require('./util/generateMarkdown');
+let markdown = require('./util/markdown');
 
-
+//Array collecting data for README
 const questions = [
     {
         type: "input",
@@ -99,6 +99,7 @@ const questions = [
     }
 ]
 
+//Function writing data to README file
 function wrtieToFile(fileName, data){
     return fs.writeFileSync(path.join(process.cwd(), fileName), data)
 }
@@ -106,7 +107,7 @@ function wrtieToFile(fileName, data){
 //var inquirer = require('inquirer');
  inquirer.prompt(questions).then((answers) => {
       console.log('Creating README.md File...'); 
-      wrtieToFile("./dist/README.md", generateMarkdown({...answers}))
+      wrtieToFile("./dist/README.md", markdown({...answers}))
    })
    .catch((error) => {
       if (error.isTtyError) {

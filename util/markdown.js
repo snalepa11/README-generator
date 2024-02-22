@@ -1,39 +1,34 @@
 
-/*
-{
-    1: hello bob
-    2. name of author 
-}
-*/
 
-function generateMarkdown(data){
+
+function markdown(data){
     console.log(data)
-    return `#${data.Title}
-    ##Table of Contents
+    return `# ${data.Title}
+    ## Table of Contents
     - [Description](#Description)
     - [Installation Instructions](#Installation)
     - [Usage](#Usage)
     - [Contributions](#Contributions)
     - [Test Instructions](#Test)
-    - [License]()
+    - [License](#License)
     - [Questions](#Name)
-    ##Description 
+    ## Description 
     ${data.Description}
-    ##Installation Instructions
+    ## Installation Instructions
     ${data.Installation}
-    ##Usage
+    ## Usage
     ${data.Usage}
-    ##Contributions
+    ## Contributions
     Contributors: ${data.Contributions}
-    ##Test Instructions
+    ## Test Instructions
     ${data.Test}
-    ##License 
+    ## License 
     ${data.License}
-    ##Questions
+    ## Questions
     - GitHub Name: ${data.Name}
     - GitHub Link: ${data.Link}
     - Desployed Link: ${data.Deployed}
     - Email:${data.Email}`
 };
 
-module.exports = generateMarkdown;
+module.exports = markdown;
