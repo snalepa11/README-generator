@@ -4,31 +4,38 @@
 function markdown(data){
     console.log(data)
     return `# ${data.Title}
-    ## Table of Contents
-    - [Description](#Description)
-    - [Installation Instructions](#Installation)
-    - [Usage](#Usage)
-    - [Contributions](#Contributions)
-    - [Test Instructions](#Test)
-    - [License](#License)
-    - [Questions](#Name)
-    ## Description 
+    \n## Table of Contents
+    \n- [Description](#description)
+   \n - [Installation Instructions](#installation-instructions)
+   \n - [Usage](#usage)
+   \n - [Contributions](#contributions)
+   \n - [Test Instructions](#test-instructions)
+   \n - [License](#license)
+   \n - [Questions](#questions)
+
+   \n## Description 
     ${data.Description}
-    ## Installation Instructions
+
+   \n## Installation Instructions
     ${data.Installation}
-    ## Usage
+
+   \n## Usage
     ${data.Usage}
-    ## Contributions
+
+   \n## Contributions
     Contributors: ${data.Contributions}
-    ## Test Instructions
+
+   \n## Test Instructions
     ${data.Test}
-    ## License 
+
+   \n## License 
     ${data.License}
-    ## Questions
-    - GitHub Name: ${data.Name}
-    - GitHub Link: ${data.Link}
-    - Desployed Link: ${data.Deployed}
-    - Email:${data.Email}`
+
+   \n## Questions
+    * GitHub Name: ${data.Name}
+    * GitHub Link: ${data.Link}
+    * Desployed Link: ${data.Deployed}
+    * Email:${data.Email}`
 };
 
 module.exports = markdown;
