@@ -9,6 +9,6 @@ GitHub Repository: https://github.com/snalepa11/README-generator
 
 Deployed Link: https://snalepa11.github.io/README-generator/
 
-Demo: [README Generator.webm](https://github.com/snalepa11/README-generator/assets/131091044/c7a4c38c-559d-406c-bbfa-8fdb25de2a80)
+Demo: [README Generator Demo.webm](https://github.com/snalepa11/README-generator/assets/131091044/da822d01-b685-43e9-b744-3ad83d416f16)
 
 
