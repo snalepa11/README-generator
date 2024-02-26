@@ -3,6 +3,10 @@
 ## Description
 This application is a node.js application which will receive input via the terminal and generate a README file.
 
+## Installation
+Step 1.) Clone repository 
+Step 2.) Run npm install in VS terminal 
+Step 3.) Once packae is installed, start program by typing _node index.js_ into your VS terminal
 
 ## Links
 GitHub Repository: https://github.com/snalepa11/README-generator
